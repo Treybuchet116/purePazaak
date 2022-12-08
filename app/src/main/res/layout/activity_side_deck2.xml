@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SideDeckActivity">
+
+    <ImageView
+        android:id="@+id/ivCard1Blue"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="@dimen/cardSideSelectMargin"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card1blue" />
+
+    <Button
+        android:id="@+id/btn1BlueUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard1Blue"
+        app:layout_constraintTop_toTopOf="@id/ivCard1Blue" />
+
+    <TextView
+        android:id="@+id/tv1Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:tag="blue1"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard1Blue"
+        app:layout_constraintStart_toEndOf="@+id/ivCard1Blue"
+        app:layout_constraintTop_toTopOf="@+id/ivCard1Blue" />
+
+    <Button
+        android:id="@+id/btn1BlueDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard1Blue"
+        app:layout_constraintStart_toEndOf="@id/ivCard1Blue" />
+
+    <ImageView
+        android:id="@+id/ivCard1Red"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="@id/ivCard1Blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card1red" />
+
+    <Button
+        android:id="@+id/btn1RedUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard1Red"
+        app:layout_constraintTop_toTopOf="@id/ivCard1Red" />
+
+    <TextView
+        android:id="@+id/tv1Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard1Red"
+        app:layout_constraintStart_toEndOf="@+id/ivCard1Red"
+        app:layout_constraintTop_toTopOf="@+id/ivCard1Red" />
+
+    <Button
+        android:id="@+id/btn1RedDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard1Red"
+        app:layout_constraintStart_toEndOf="@id/ivCard1Red" />
+
+    <ImageView
+        android:id="@+id/ivCard1BlueFlip"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="@id/ivCard1Red"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card1blueflip" />
+
+    <Button
+        android:id="@+id/btn1BlueFlipUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard1BlueFlip"
+        app:layout_constraintTop_toTopOf="@id/ivCard1BlueFlip" />
+
+    <TextView
+        android:id="@+id/tv1BlueFlip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard1BlueFlip"
+        app:layout_constraintStart_toEndOf="@+id/ivCard1BlueFlip"
+        app:layout_constraintTop_toTopOf="@+id/ivCard1BlueFlip" />
+
+    <Button
+        android:id="@+id/btn1BlueFlipDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard1BlueFlip"
+        app:layout_constraintStart_toEndOf="@id/ivCard1BlueFlip" />
+
+
+    <ImageView
+        android:id="@+id/ivCard2Blue"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_margin="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCard1Blue"
+        app:srcCompat="@drawable/card2blue" />
+
+    <Button
+        android:id="@+id/btn2BlueUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard2Blue"
+        app:layout_constraintTop_toTopOf="@id/ivCard2Blue" />
+
+    <TextView
+        android:id="@+id/tv2Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard2Blue"
+        app:layout_constraintStart_toEndOf="@+id/ivCard2Blue"
+        app:layout_constraintTop_toTopOf="@+id/ivCard2Blue" />
+
+    <Button
+        android:id="@+id/btn2BlueDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard2Blue"
+        app:layout_constraintStart_toEndOf="@id/ivCard2Blue" />
+
+    <ImageView
+        android:id="@+id/ivCard2Red"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="@id/ivCard2Blue"
+        app:layout_constraintTop_toBottomOf="@id/ivCard1Blue"
+        app:srcCompat="@drawable/card2red" />
+
+    <Button
+        android:id="@+id/btn2RedUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard2Red"
+        app:layout_constraintTop_toTopOf="@id/ivCard2Red" />
+
+    <TextView
+        android:id="@+id/tv2Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard2Red"
+        app:layout_constraintStart_toEndOf="@+id/ivCard2Red"
+        app:layout_constraintTop_toTopOf="@+id/ivCard2Red" />
+
+    <Button
+        android:id="@+id/btn2RedDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard2Red"
+        app:layout_constraintStart_toEndOf="@id/ivCard2Red" />
+
+    <ImageView
+        android:id="@+id/ivCard2BlueFlip"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="@id/ivCard2Red"
+        app:layout_constraintTop_toBottomOf="@id/ivCard1Blue"
+        app:srcCompat="@drawable/card2blueflip" />
+
+    <Button
+        android:id="@+id/btn2BlueFlipUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard2BlueFlip"
+        app:layout_constraintTop_toTopOf="@id/ivCard2BlueFlip" />
+
+    <TextView
+        android:id="@+id/tv2BlueFlip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard2BlueFlip"
+        app:layout_constraintStart_toEndOf="@+id/ivCard2BlueFlip"
+        app:layout_constraintTop_toTopOf="@+id/ivCard2BlueFlip" />
+
+    <Button
+        android:id="@+id/btn2BlueFlipDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard2BlueFlip"
+        app:layout_constraintStart_toEndOf="@id/ivCard2BlueFlip" />
+
+
+    <ImageView
+        android:id="@+id/ivCard3Blue"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_margin="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCard2Blue"
+        app:srcCompat="@drawable/card3blue" />
+
+    <Button
+        android:id="@+id/btn3BlueUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard3Blue"
+        app:layout_constraintTop_toTopOf="@id/ivCard3Blue" />
+
+    <TextView
+        android:id="@+id/tv3Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard3Blue"
+        app:layout_constraintStart_toEndOf="@+id/ivCard3Blue"
+        app:layout_constraintTop_toTopOf="@+id/ivCard3Blue" />
+
+    <Button
+        android:id="@+id/btn3BlueDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard3Blue"
+        app:layout_constraintStart_toEndOf="@id/ivCard3Blue" />
+
+    <ImageView
+        android:id="@+id/ivCard3Red"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="@id/ivCard3Blue"
+        app:layout_constraintTop_toBottomOf="@id/ivCard2Blue"
+        app:srcCompat="@drawable/card3red" />
+
+    <Button
+        android:id="@+id/btn3RedUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard3Red"
+        app:layout_constraintTop_toTopOf="@id/ivCard3Red" />
+
+    <TextView
+        android:id="@+id/tv3Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard3Red"
+        app:layout_constraintStart_toEndOf="@+id/ivCard3Red"
+        app:layout_constraintTop_toTopOf="@+id/ivCard3Red" />
+
+    <Button
+        android:id="@+id/btn3RedDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard3Red"
+        app:layout_constraintStart_toEndOf="@id/ivCard3Red" />
+
+    <ImageView
+        android:id="@+id/ivCard3BlueFlip"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="@id/ivCard3Red"
+        app:layout_constraintTop_toBottomOf="@id/ivCard2Blue"
+        app:srcCompat="@drawable/card3blueflip" />
+
+    <Button
+        android:id="@+id/btn3BlueFlipUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard3BlueFlip"
+        app:layout_constraintTop_toTopOf="@id/ivCard3BlueFlip" />
+
+    <TextView
+        android:id="@+id/tv3BlueFlip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard3BlueFlip"
+        app:layout_constraintStart_toEndOf="@+id/ivCard3BlueFlip"
+        app:layout_constraintTop_toTopOf="@+id/ivCard3BlueFlip" />
+
+    <Button
+        android:id="@+id/btn3BlueFlipDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard3BlueFlip"
+        app:layout_constraintStart_toEndOf="@id/ivCard3BlueFlip" />
+
+    <ImageView
+        android:id="@+id/ivCard4Blue"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_margin="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCard3Blue"
+        app:srcCompat="@drawable/card4blue" />
+
+    <Button
+        android:id="@+id/btn4BlueUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard4Blue"
+        app:layout_constraintTop_toTopOf="@id/ivCard4Blue" />
+
+    <TextView
+        android:id="@+id/tv4Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard4Blue"
+        app:layout_constraintStart_toEndOf="@+id/ivCard4Blue"
+        app:layout_constraintTop_toTopOf="@+id/ivCard4Blue" />
+
+    <Button
+        android:id="@+id/btn4BlueDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard4Blue"
+        app:layout_constraintStart_toEndOf="@id/ivCard4Blue" />
+
+    <ImageView
+        android:id="@+id/ivCard4Red"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="@id/ivCard4Blue"
+        app:layout_constraintTop_toBottomOf="@id/ivCard3Blue"
+        app:srcCompat="@drawable/card4red" />
+
+    <Button
+        android:id="@+id/btn4RedUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard4Red"
+        app:layout_constraintTop_toTopOf="@id/ivCard4Red" />
+
+    <TextView
+        android:id="@+id/tv4Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard4Red"
+        app:layout_constraintStart_toEndOf="@+id/ivCard4Red"
+        app:layout_constraintTop_toTopOf="@+id/ivCard4Red" />
+
+    <Button
+        android:id="@+id/btn4RedDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard4Red"
+        app:layout_constraintStart_toEndOf="@id/ivCard4Red" />
+
+    <ImageView
+        android:id="@+id/ivCard4BlueFlip"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="@id/ivCard4Red"
+        app:layout_constraintTop_toBottomOf="@id/ivCard3Blue"
+        app:srcCompat="@drawable/card4blueflip" />
+
+    <Button
+        android:id="@+id/btn4BlueFlipUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard4BlueFlip"
+        app:layout_constraintTop_toTopOf="@id/ivCard4BlueFlip" />
+
+    <TextView
+        android:id="@+id/tv4BlueFlip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard4BlueFlip"
+        app:layout_constraintStart_toEndOf="@+id/ivCard4BlueFlip"
+        app:layout_constraintTop_toTopOf="@+id/ivCard4BlueFlip" />
+
+    <Button
+        android:id="@+id/btn4BlueFlipDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard4BlueFlip"
+        app:layout_constraintStart_toEndOf="@id/ivCard4BlueFlip" />
+
+
+    <ImageView
+        android:id="@+id/ivCard5Blue"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_margin="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCard4Blue"
+        app:srcCompat="@drawable/card5blue" />
+
+    <Button
+        android:id="@+id/btn5BlueUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard5Blue"
+        app:layout_constraintTop_toTopOf="@id/ivCard5Blue" />
+
+    <TextView
+        android:id="@+id/tv5Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard5Blue"
+        app:layout_constraintStart_toEndOf="@+id/ivCard5Blue"
+        app:layout_constraintTop_toTopOf="@+id/ivCard5Blue" />
+
+    <Button
+        android:id="@+id/btn5BlueDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard5Blue"
+        app:layout_constraintStart_toEndOf="@id/ivCard5Blue" />
+
+    <ImageView
+        android:id="@+id/ivCard5Red"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="@id/ivCard5Blue"
+        app:layout_constraintTop_toBottomOf="@id/ivCard4Blue"
+        app:srcCompat="@drawable/card5red" />
+
+    <Button
+        android:id="@+id/btn5RedUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard5Red"
+        app:layout_constraintTop_toTopOf="@id/ivCard5Red" />
+
+    <TextView
+        android:id="@+id/tv5Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard5Red"
+        app:layout_constraintStart_toEndOf="@+id/ivCard5Red"
+        app:layout_constraintTop_toTopOf="@+id/ivCard5Red" />
+
+    <Button
+        android:id="@+id/btn5RedDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard5Red"
+        app:layout_constraintStart_toEndOf="@id/ivCard5Red" />
+
+    <ImageView
+        android:id="@+id/ivCard5BlueFlip"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="@id/ivCard5Red"
+        app:layout_constraintTop_toBottomOf="@id/ivCard4Blue"
+        app:srcCompat="@drawable/card5blueflip" />
+
+    <Button
+        android:id="@+id/btn5BlueFlipUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard5BlueFlip"
+        app:layout_constraintTop_toTopOf="@id/ivCard5BlueFlip" />
+
+    <TextView
+        android:id="@+id/tv5BlueFlip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard5BlueFlip"
+        app:layout_constraintStart_toEndOf="@+id/ivCard5BlueFlip"
+        app:layout_constraintTop_toTopOf="@+id/ivCard5BlueFlip" />
+
+    <Button
+        android:id="@+id/btn5BlueFlipDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard5BlueFlip"
+        app:layout_constraintStart_toEndOf="@id/ivCard5BlueFlip" />
+
+    <ImageView
+        android:id="@+id/ivCard6Blue"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_margin="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCard5Blue"
+        app:srcCompat="@drawable/card6blue" />
+
+    <Button
+        android:id="@+id/btn6BlueUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard6Blue"
+        app:layout_constraintTop_toTopOf="@id/ivCard6Blue" />
+
+    <TextView
+        android:id="@+id/tv6Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard6Blue"
+        app:layout_constraintStart_toEndOf="@+id/ivCard6Blue"
+        app:layout_constraintTop_toTopOf="@+id/ivCard6Blue" />
+
+    <Button
+        android:id="@+id/btn6BlueDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard6Blue"
+        app:layout_constraintStart_toEndOf="@id/ivCard6Blue" />
+
+    <ImageView
+        android:id="@+id/ivCard6Red"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="@id/ivCard6Blue"
+        app:layout_constraintTop_toBottomOf="@id/ivCard5Blue"
+        app:srcCompat="@drawable/card6red" />
+
+    <Button
+        android:id="@+id/btn6RedUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard6Red"
+        app:layout_constraintTop_toTopOf="@id/ivCard6Red" />
+
+    <TextView
+        android:id="@+id/tv6Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard6Red"
+        app:layout_constraintStart_toEndOf="@+id/ivCard6Red"
+        app:layout_constraintTop_toTopOf="@+id/ivCard6Red" />
+
+    <Button
+        android:id="@+id/btn6RedDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard6Red"
+        app:layout_constraintStart_toEndOf="@id/ivCard6Red" />
+
+    <ImageView
+        android:id="@+id/ivCard6BlueFlip"
+        android:layout_width="64dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="@dimen/cardSideSelectMargin"
+        app:layout_constraintStart_toStartOf="@id/ivCard6Red"
+        app:layout_constraintTop_toBottomOf="@id/ivCard5Blue"
+        app:srcCompat="@drawable/card6blueflip" />
+
+    <Button
+        android:id="@+id/btn6BlueFlipUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintStart_toEndOf="@id/ivCard6BlueFlip"
+        app:layout_constraintTop_toTopOf="@id/ivCard6BlueFlip" />
+
+    <TextView
+        android:id="@+id/tv6BlueFlip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/placeholder_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCard6BlueFlip"
+        app:layout_constraintStart_toEndOf="@+id/ivCard6BlueFlip"
+        app:layout_constraintTop_toTopOf="@+id/ivCard6BlueFlip" />
+
+    <Button
+        android:id="@+id/btn6BlueFlipDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_circle"
+        android:foreground="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard6BlueFlip"
+        app:layout_constraintStart_toEndOf="@id/ivCard6BlueFlip" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Start Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

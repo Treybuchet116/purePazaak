@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SideDeckActivity"
+    android:background="#D3D3D3">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivCard1Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card1blue" />
+
+            <ImageView
+                android:id="@+id/ivCard2Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card2blue" />
+            <ImageView
+                android:id="@+id/ivCard3Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card3blue" />
+            <ImageView
+                android:id="@+id/ivCard4Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card4blue" />
+            <ImageView
+                android:id="@+id/ivCard5Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card5blue" />
+            <ImageView
+                android:id="@+id/ivCard6Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card6blue" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/ivCard1Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card1red" />
+            <ImageView
+                android:id="@+id/ivCard2Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card2red" />
+            <ImageView
+                android:id="@+id/ivCard3Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card3red" />
+            <ImageView
+                android:id="@+id/ivCard4Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card4red" />
+            <ImageView
+                android:id="@+id/ivCard5Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card5red" />
+            <ImageView
+                android:id="@+id/ivCard6Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card6red" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/ivCard1BlueFlip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card1blueflip" />
+            <ImageView
+                android:id="@+id/ivCard2BlueFlip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card2blueflip" />
+            <ImageView
+                android:id="@+id/ivCard3BlueFlip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card3blueflip" />
+            <ImageView
+                android:id="@+id/ivCard4BlueFlip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card4blueflip" />
+            <ImageView
+                android:id="@+id/ivCard5BlueFlip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card5blueflip" />
+            <ImageView
+                android:id="@+id/ivCard6BlueFlip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card6blueflip" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
